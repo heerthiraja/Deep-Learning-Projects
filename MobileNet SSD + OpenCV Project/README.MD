@@ -98,7 +98,7 @@ Let's break down the code step by step:
 - We thank the authors of the MobileNet SSD model and the COCO dataset for their valuable contributions.
 
 
-#Thank You!
+# Thank You!
 
 
 
