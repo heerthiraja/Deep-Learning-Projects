@@ -1,72 +1,104 @@
-# MobileNet SSD
+# Object Recognition using MobileNet SSD
 
-## Facial Recognition Attendance System
-
-This project implements a facial recognition system for attendance purposes, utilizing Python libraries like OpenCV, TensorFlow, and scikit-learn to achieve real-time recognition.
+This project demonstrates real-time object recognition using the MobileNet Single Shot MultiBox Detector (SSD). The MobileNet architecture is lightweight and well-suited for real-time applications on resource-constrained devices.
 
 ## Table of Contents
 
-Project Structure
-Dependencies
-Getting Started
-Usage
-Further Enhancements
-License
-Project Structure
+1. [Introduction](#introduction)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Results and Examples](#results-and-examples)
+5. [Contributing](#contributing)
+6. [License](#license)
+7. [Acknowledgments](#acknowledgments)
 
-## The project is organized into the following folders:
+## Introduction
 
-data/: This folder stores the labeled image datasets used for training the model.
-embeddings/: This folder contains the extracted facial embeddings generated during preprocessing.
-model/: This folder holds the trained facial recognition model.
-scripts/: This folder contains Python scripts for:
-data_creation.py: Captures user data and creates labeled image datasets.
-preprocessing.py: Preprocesses images and extracts facial embeddings.
-train_model.py: Trains the facial recognition model.
-real_time_recognition.py: Implements live recognition and attendance marking.
-utils/: This folder contains utility functions used throughout the project (optional).
+The goal of this project is to detect and label objects in a live webcam feed. We use the MobileNet SSD model, which is pre-trained on the COCO dataset and capable of detecting 20 different object classes.
 
+## Installation
 
-## Dependencies
+1. Clone this repository:
 
-- Python 3.7
-- TensorFlow 2.4.0
-- Keras 2.4.0
-- OpenCV
-- NumPy
-- scikit-learn
-- imutils (optional)
-- pickle
-- Getting Started
+    ```bash
+    git clone https://github.com/your-username/your-repo.git
+    ```
 
-Install Dependencies: Use pip install <package_name> to install the required dependencies.
+2. Install the necessary Python packages:
 
-## Download Pre-trained Models:
-
-Download a pre-trained deep learning model for facial feature extraction, compatible with TensorFlow (explore alternatives like VGGFace2).
-Download a pre-trained face detection model (like "haarcascade_frontalface_default.xml") or train your own.
-
-Create Datasets: Run scripts/data_creation.py to capture user data and create labeled image datasets.
+    ```bash
+    pip install -r requirements.txt
+    ```
 
 ## Usage
 
-Preprocess Data: Run scripts/preprocessing.py to preprocess images and generate embeddings.
+1. Run the object recognition script:
 
-Train Model: Run scripts/train_model.py to train the facial recognition model using TensorFlow and Keras.
+    ```bash
+    python object_recognition.py
+    ```
 
-Real-Time Recognition: Run scripts/real_time_recognition.py to experience live recognition and potentially integrate with your attendance management system.
+2. The webcam feed will open, and detected objects will be highlighted with bounding boxes and labels.
+
+## Results and Examples
+
+![Object Recognition Example](example.gif)
 
 ## Demo
 
 https://github.com/heerthiraja/Deep-Learning-Projects/assets/109062130/56a249a4-6971-4ed5-87e5-145000318eda
 
-Further Enhancements
 
-Integrate the system with an existing attendance management platform.
-Implement security measures for user authentication.
-Enhance the user interface for a more user-friendly experience.
-Explore more advanced deep learning models for facial feature extraction.
+Let's break down the code step by step:
 
-# Thank You!
+1. **Importing Libraries**:
+    - We start by importing the necessary Python libraries:
+        - `numpy`: For mathematical operations.
+        - `imutils`: To resize images.
+        - `cv2` (OpenCV): For image acquisition and manipulation.
+        - `time`: To introduce a delay (used later).
+
+2. **Model and Configuration Files**:
+    - We define the paths to the MobileNet SSD model and its corresponding prototxt file:
+        - `prototxt`: Path to the prototxt file.
+        - `model`: Path to the pre-trained MobileNet SSD model.
+
+3. **Threshold and Class Labels**:
+    - We set a confidence threshold (`confThresh`) to filter out low-confidence detections.
+    - The `CLASSES` list contains the names of the 20 object classes that the MobileNet SSD model can detect.
+
+4. **Loading the Model**:
+    - We load the MobileNet SSD model using OpenCV's `dnn` module.
+    - The model is based on a deep neural network architecture and has been trained to recognize objects.
+
+5. **Initializing the Camera Feed**:
+    - We initialize the webcam feed using `cv2.VideoCapture(0)`.
+    - A delay of 2 seconds (`time.sleep(2.0)`) allows the camera to stabilize.
+
+6. **Main Loop**:
+    - We continuously read frames from the camera (`vs.read()`).
+    - Each frame is resized to a width of 500 pixels (`imutils.resize(frame, width=500)`).
+    - We preprocess the resized frame by creating a blob (binary large object) using `cv2.dnn.blobFromImage`.
+    - The blob is set as input to the MobileNet SSD model (`net.setInput(blob)`).
+    - The model predicts detections, and we iterate through them:
+        - If the confidence of a detection is above the threshold, we extract the class index, bounding box coordinates, and label.
+        - We draw bounding boxes around detected objects and display their labels on the frame.
+    - The processed frame is displayed in a window (`cv2.imshow("Frame", frame)`).
+    - Pressing the 'q' key quits the loop.
+
+7. **Cleanup**:
+    - After exiting the loop, we release the camera (`vs.release()`) and close the OpenCV windows (`cv2.destroyAllWindows()`).
+
+8. **Summary**:
+    - This code captures webcam frames, processes them using the MobileNet SSD model, and displays detected objects with bounding boxes and labels.
+
+
+## Acknowledgments
+
+- We thank the authors of the MobileNet SSD model and the COCO dataset for their valuable contributions.
+
+
+#Thank You!
+
 
 
