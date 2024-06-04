@@ -8,9 +8,8 @@ This project demonstrates real-time object recognition using the MobileNet Singl
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [Results and Examples](#results-and-examples)
-5. [Contributing](#contributing)
-6. [License](#license)
-7. [Acknowledgments](#acknowledgments)
+5. [Code Explanation]
+6. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
