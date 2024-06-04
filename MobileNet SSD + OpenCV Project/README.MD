@@ -56,6 +56,10 @@ Train Model: Run scripts/train_model.py to train the facial recognition model us
 
 Real-Time Recognition: Run scripts/real_time_recognition.py to experience live recognition and potentially integrate with your attendance management system.
 
+## Demo
+
+https://github.com/heerthiraja/Deep-Learning-Projects/assets/109062130/56a249a4-6971-4ed5-87e5-145000318eda
+
 Further Enhancements
 
 Integrate the system with an existing attendance management platform.
