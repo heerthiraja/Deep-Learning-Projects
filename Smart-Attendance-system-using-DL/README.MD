@@ -2,14 +2,6 @@
 
 This project implements a facial recognition system for attendance purposes, utilizing Python libraries like OpenCV, TensorFlow, and scikit-learn to achieve real-time recognition.
 
-## Table of Contents
-
-Project Structure
-Dependencies
-Getting Started
-Usage
-Further Enhancements
-Project Structure
 
 ## The project is organized into the following folders:
 
