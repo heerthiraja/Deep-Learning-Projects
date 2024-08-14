@@ -1,15 +1,14 @@
-# Object Recognition using MobileNet SSD
+# Leaf Disease Detection Using Computer Vision
 
-This project demonstrates real-time object recognition using the MobileNet Single Shot MultiBox Detector (SSD). The MobileNet architecture is lightweight and well-suited for real-time applications on resource-constrained devices.
+This project demonstrates the detection of leaf diseases using a Convolutional Neural Network (CNN). The model is trained to classify images of leaves into different disease categories, helping farmers take timely actions to protect their crops.
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
 2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Results and Examples](#results-and-examples)
-5. [Code Explanation](#code-explanation)
-6. [Acknowledgments](#acknowledgments)
+3. [Demo](#demo)
+4. [Let's break down the code step by step](#Let's-break-down-the-code-step-by-step)
+5. [Acknowledgments](#acknowledgments)
 
 ## Introduction
 
@@ -34,7 +33,7 @@ The goal of this project is to detect and label objects in a live webcam feed. W
 
 https://github.com/user-attachments/assets/cee1cdad-9c91-423b-98b1-9cea3d702cb3
 
-Let's break down the code step by step:
+## Let's break down the code step by step:
 
 1. **Importing Libraries**:
     - Import necessary libraries from TensorFlow, Keras, and other Python packages for building and training the CNN model.
@@ -73,6 +72,7 @@ Let's break down the code step by step:
     - This project uses a Convolutional Neural Network (CNN) to detect and classify leaf diseases, providing a user-friendly GUI for real-time predictions.
 
 ## Acknowledgments
-    - We thank the authors of the dataset and the contributors to the TensorFlow and Keras libraries for their valuable resources.
+
+ - We thank the authors of the dataset and the contributors to the TensorFlow and Keras libraries for their valuable resources.
 
 # Thank you!
