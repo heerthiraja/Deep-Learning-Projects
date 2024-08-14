@@ -41,7 +41,7 @@ https://github.com/user-attachments/assets/cee1cdad-9c91-423b-98b1-9cea3d702cb3
 2. **Model Architecture**:
     - Define the Convolutional Neural Network (CNN) architecture with multiple convolutional, pooling, batch normalization, and dropout layers to extract features and prevent overfitting.
 
-3. Compiling the Model**:
+3. **Compiling the Model**:
     - Compile the model using an optimizer (e.g., Adam) and a loss function (e.g., categorical cross-entropy) to prepare it for training.
 
 4. **Data Augmentation**:
