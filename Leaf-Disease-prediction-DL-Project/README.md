@@ -69,7 +69,8 @@ https://github.com/user-attachments/assets/cee1cdad-9c91-423b-98b1-9cea3d702cb3
     - Ensure proper cleanup by releasing resources and closing any open windows after the GUI application is closed.
 
 **Summary**:
-    - This project uses a Convolutional Neural Network (CNN) to detect and classify leaf diseases, providing a user-friendly GUI for real-time predictions.
+    
+- This project uses a Convolutional Neural Network (CNN) to detect and classify leaf diseases, providing a user-friendly GUI for real-time predictions.
 
 ## Acknowledgments
 
