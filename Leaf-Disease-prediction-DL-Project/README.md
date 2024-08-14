@@ -12,7 +12,7 @@ This project demonstrates the detection of leaf diseases using a Convolutional N
 
 ## Introduction
 
-The goal of this project is to detect and label objects in a live webcam feed. We use the MobileNet SSD model, which is pre-trained on the COCO dataset and capable of detecting 20 different object classes.
+The goal of this project is to detect and classify leaf diseases using a CNN. The model is trained on a dataset of leaf images with various diseases and can identify 25 different disease categories.
 
 ## Installation
 
