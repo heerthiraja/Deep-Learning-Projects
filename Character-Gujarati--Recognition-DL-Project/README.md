@@ -31,7 +31,8 @@ The goal of this project is to detect and classify Gujarati characters using a C
 
 ## Demo
 
-https://github.com/user-attachments/assets/69026880-7f16-4e08-8fe9-596b5797c17a
+https://github.com/user-attachments/assets/d3c6d4e6-4a4c-4930-889c-69da3bb83c70
+
 
 ## Let's break down the code step by step:
 
@@ -66,14 +67,14 @@ https://github.com/user-attachments/assets/69026880-7f16-4e08-8fe9-596b5797c17a
   - Preprocess the uploaded image, make predictions using the loaded model, and display the predicted Gujarati character label on the GUI. The result is shown in the text box within the GUI.
 
 12. **Cleanup**:
-Ensure proper cleanup by releasing resources and closing any open windows after the GUI application is closed. This includes freeing up memory and closing any open file handles.
+    - Ensure proper cleanup by releasing resources and closing any open windows after the GUI application is closed. This includes freeing up memory and closing any open file handles.
 
 
 ## Summary:
   - This project uses a Convolutional Neural Network (CNN) to detect and classify Gujarati characters, providing a user-friendly GUI for real-time predictions. The application is built with TensorFlow, Keras, and PyQt5, making it a comprehensive solution for character recognition tasks.
 
 ## Acknowledgments
-We thank the developers of TensorFlow, Keras, and PyQt5 for their valuable resources, as well as the creators of the Gujarati character dataset used in this project.
+   We thank the developers of TensorFlow, Keras, and PyQt5 for their valuable resources, as well as the creators of the Gujarati character dataset used in this project.
 
 
 
