@@ -158,7 +158,6 @@ This Smart Attendance System project automates the attendance process using faci
 
 We extend our gratitude to the developers of the facial recognition libraries and the authors of the datasets used in training. Special thanks to the open-source community for their contributions, making this project possible.
 
-Thank you!
 
 Further Enhancements
 
