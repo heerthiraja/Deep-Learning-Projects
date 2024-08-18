@@ -1,6 +1,6 @@
-# Gujarati Character Recognition Using CNN and PyQt5
+# Smart Attendance System
 
-This project demonstrates the recognition of Gujarati characters using a Convolutional Neural Network (CNN). The model is trained to classify images of Gujarati characters into 45 different categories, enabling efficient and accurate character recognition.
+The Smart Attendance System is a facial recognition-based attendance management system that automates the process of recording attendance. By capturing and recognizing faces, the system ensures that attendance records are accurate and tamper-proof. This system is ideal for educational institutions, corporate offices, and other organizations where attendance tracking is crucial.
 
 ## Table of Contents
 
