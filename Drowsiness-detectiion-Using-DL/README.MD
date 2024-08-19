@@ -8,15 +8,17 @@ This project implements a real-time drowsiness detection system using computer v
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Demo](#demo)
-4. [Project Overview](#Project Overview)
-5. [How It Works](#How It Works)
-6. [Key Features](#Key Features)
-7. [Conclusion](#Conclusion)
+4. [Project Overview](#project overview)
+5. [How It Works](#How it works)
+6. [Key Features](#key features)
+7. [Conclusion](#conclusion)
 8. [Acknowledgments](#acknowledgments)
 
 
 ## Introduction
+
 Drowsiness while driving is a major cause of road accidents globally. This project aims to create a system that can detect drowsiness in real-time by analyzing eye movements using a webcam. The system triggers an alert if it detects that the driver is drowsy, thereby potentially preventing accidents.
+
 
 ## Installation
 
@@ -40,9 +42,12 @@ Check out the system in action:
 https://github.com/user-attachments/assets/efa3b581-87f6-499f-8cd8-6c46912c0363
 
 
+
 ## Project Overview
 
 This project leverages a combination of computer vision techniques and a well-known face landmarks detector provided by dlib to monitor the eye aspect ratio (EAR). The system continuously checks for signs of drowsiness and alerts the user with an audible beep if the eyes remain closed for a certain period.
+
+
 
 ## How It Works
 
@@ -65,6 +70,7 @@ This project leverages a combination of computer vision techniques and a well-kn
   - The system runs in real-time, continuously monitoring the user's eyes and updating the EAR calculation.
 
 
+
 ## Key Features
 
 **Real-Time Monitoring**: The system processes video frames in real-time for instant detection.
@@ -74,9 +80,12 @@ This project leverages a combination of computer vision techniques and a well-kn
 **Customizable Parameters**: EAR threshold and frame count can be adjusted for different sensitivity levels.
 
 
+
 ## Conclusion
 
 This drowsiness detection system is a practical tool for enhancing driver safety. By using computer vision to monitor signs of drowsiness, it provides an effective solution for preventing accidents caused by driver fatigue.
+
+
 
 ## Acknowledgments
 
