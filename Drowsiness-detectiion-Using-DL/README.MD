@@ -8,9 +8,9 @@ This project implements a real-time drowsiness detection system using computer v
 1. [Introduction](#introduction)
 2. [Installation](#installation)
 3. [Demo](#demo)
-4. [Project Overview](#project overview)
-5. [How It Works](#How it works)
-6. [Key Features](#key features)
+4. [Project Overview](#project-overview)
+5. [How It Works](#How-it-works)
+6. [Key Features](#key-features)
 7. [Conclusion](#conclusion)
 8. [Acknowledgments](#acknowledgments)
 
