@@ -19,7 +19,7 @@ The goal of this project is to detect and classify Gujarati characters using a C
 1. Clone this repository:
 
     ```bash
-    git clone https://github.com/your-username/gujarati-character-recognition.git
+    git clone https://github.com/your-username/Smart-Attendance-system-using-DL.git
     ```
 
 2. Install the necessary Python packages:
