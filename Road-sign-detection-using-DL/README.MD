@@ -68,12 +68,8 @@ Always ensure that your collected data is properly labeled and categorized accor
   ```bash
   python main.py
   ```
-  
-## GUI Interface
 
-**Browse Image**: Load an image of a road sign for classification.
-**Classify**: Classify the loaded image using the trained model.
-**Training**: Train the model on the dataset. This will also save the trained model to disk.
+
 
 ## Model Architecture
 
@@ -84,9 +80,11 @@ Always ensure that your collected data is properly labeled and categorized accor
 **Dropout Layers**: To prevent overfitting by randomly dropping neurons during training.
 **Fully Connected Layers**: For final classification into 43 road sign categories.
 
+
 ## Training the Model
 
   The model can be trained by clicking the Training button in the GUI. The model is compiled using the Adam optimizer and categorical cross-entropy loss function. Training accuracy and validation accuracy, as well as loss, are plotted and saved as images.
+
 
 ## Testing and Classifying
 
@@ -101,18 +99,22 @@ Always ensure that your collected data is properly labeled and categorized accor
 **Classify**: Classifies the loaded image and displays the recognized road sign.
 **Training**: Trains the model with the dataset and saves it for future use.
 
+
 ## Results
 
   The model achieves satisfactory accuracy on the test set, with performance metrics plotted and saved during the training process.
+
 
 ## Model Accuracy
 
   ![Accuracy](https://github.com/user-attachments/assets/9efed679-e82a-41df-8d05-dc19a0feeb64)
 
+
 ## Model Loss
 
   ![Loss](https://github.com/user-attachments/assets/09833742-a0c3-42ef-b895-ca943b0096c4)
-  
-##Acknowledgments
+
+
+## Acknowledgments
 
   This project utilizes the GTSRB dataset and various Python libraries including TensorFlow, Keras, and PyQt5. Special thanks to the open-source community for providing these valuable resources.
